@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Afacad", sans-serif;
+  background-color: #e0f0f652;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textarea {
+  all: unset;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  height: 244px;
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(101, 0, 163, 0.4),
+      rgba(24, 120, 175, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.first-heading {
+  font-size: 65px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  margin-top: 75px;
+}
+
+.first-heading--special {
+}
+
+.container {
+  background-color: white;
+  width: 1050px;
+  height: 520px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(183, 235, 237);
+  margin-top: 55px;
+  overflow: hidden;
+  display: flex;
+}
+
+.textarea {
+  resize: none;
+  flex: 2;
+  /* background-color: gold; */
+  font: inherit;
+  padding: 30px 40px;
+  font-size: 22px;
+}
+
+.textarea::placeholder {
+  font-weight: 300;
+  color: #959c9fa2;
+}
+
+.stats {
+  flex: 1;
+  background-color: #f1f6f8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stat {
+  flex: 1 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat:nth-child(1),
+.stat:nth-child(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.stat:nth-child(2),
+.stat:nth-child(4) {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.stat__number {
+  color: #4d5457;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.second-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #747a7c;
+}
+
+.footer {
+  width: 1050px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.4;
+}
